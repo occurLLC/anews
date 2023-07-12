@@ -17,12 +17,23 @@ html(lang="ja")
     include ./include/_head
 
   body
-    include ./include/_header
+    //- include ./include/_header
     main
-      section.MV
-        div.MV__wrapper
-          h1 hogehoge
-          p sampletext
+      section.FV.pc-only
+        .FV__bg
+          .FV__bg-text
+            p FULL-TIME
+            p EMPLOYEE
+            p CLERICAL
+            p WORK
+          .FV__bg-img
+            img(src="/img/page/FV-bg.png", alt="安定した高収入で始めるオフィスワークなら「アニューズ」")
+        .FV__wrapper
+          .FV__wrapper__contents
+            img(src="/img/page/FV-1.png", alt="事務未経験の方が8割以上 正社員×事務職という選択肢")
+          .FV__wrapper__contents
+          .FV__wrapper__contents
+          
       section
-    include ./include/_footer
+    //- include ./include/_footer
     include ./include/_script
