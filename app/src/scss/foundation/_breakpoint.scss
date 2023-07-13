@@ -1,5 +1,5 @@
-$BREAKPOINT_PC: 960px;
-$BREAKPOINT_SP: 959px;
+$BREAKPOINT_PC: 769px;
+$BREAKPOINT_SP: 768px;
 
 @mixin sp {
   @media ( max-width: ($BREAKPOINT_SP) ) {

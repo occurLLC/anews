@@ -116,13 +116,13 @@ body {
 	}
 
 	@include pc {
-		display: inline;
+		display: block;
 	}
 }
 
 .sp-only {
 	@include sp {
-		display: inline;
+		display: block;
 	}
 
 	@include pc {
