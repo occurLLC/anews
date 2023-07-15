@@ -53,6 +53,14 @@ html(lang="ja")
                 p.reg-btn__text-sub 登録はWebでかんたん！来社不要！
                 p.reg-btn__text-main かんたん60秒！今すぐ無料で登録する
       section.about
+        .about__bg-1.pc-only
+          img(src="/img/page/bg-pink1.png", alt="")
+        .about__bg-2.pc-only
+          img(src="/img/page/bg-pink2.png", alt="")
+        .about__bg-3.pc-only
+          img(src="/img/page/bg-blue2.png", alt="")
+        .about__bg-4.pc-only
+          img(src="/img/page/bg-cian2.png", alt="")
         .sec-top
           h2.sec-ttl.dark-blue ABOUT
           p.sec-sub そうキャリとは？
@@ -68,6 +76,14 @@ html(lang="ja")
             | 常時300件以上の最新の事務の求人があり、あなたにあったお仕事を厳選し紹介します。<br>
             | 未経験OKのお仕事も多くなっておりますので、まずはお気軽にご相談ください。
       section.worries
+        .worries__bg-1.pc-only
+          img(src="/img/page/bg-pink3.png", alt="")
+        .worries__bg-2.pc-only
+          img(src="/img/page/bg-pink3.png", alt="")
+        .worries__bg-3.pc-only
+          img(src="/img/page/bg-pink1.png", alt="")
+        .worries__bg-4.pc-only
+          img(src="/img/page/bg-pink2.png", alt="")
         .sec-top
           h2.sec-ttl.pink WORRIES
           p.sec-sub 働き方でこんなお悩みないですか？
@@ -145,6 +161,14 @@ html(lang="ja")
               | 無料で学べるオンラインコースも70種類以上受講可能<br>
               | OA、マナー、情報セキュリティなどオンラインで無料で受講可能です。
       section.reason
+        .reason__bg-1.pc-only
+          img(src="/img/page/bg-blue1.png", alt="")
+        .reason__bg-2.pc-only
+          img(src="/img/page/bg-cian1.png", alt="")
+        .reason__bg-3.pc-only
+          img(src="/img/page/bg-cian2.png", alt="")
+        .reason__bg-4.pc-only
+          img(src="/img/page/bg-blue2.png", alt="")
         .sec-top
           h2.sec-ttl.dark-blue REASON
           p.sec-sub 
@@ -212,6 +236,48 @@ html(lang="ja")
               h3.accordion-header.font18 Q 未経験でも働けるお仕事はありますか
               .accordion-content.font16 
                 p.accordion-text 未経験から始められる、事務職のお仕事、是非ご紹介したいオフィスワークのお仕事が多数ございます。また、当社での直接採用のお仕事もございますので、就業時間など働き方を比較的、自由に選択する環境も用意されています。
+            .accordion-item
+              h3.accordion-header.font18 Q 未経験でも働けるお仕事はありますか
+              .accordion-content.font16 
+                p.accordion-text 未経験から始められる、事務職のお仕事、是非ご紹介したいオフィスワークのお仕事が多数ございます。また、当社での直接採用のお仕事もございますので、就業時間など働き方を比較的、自由に選択する環境も用意されています。
+            .accordion-item
+              h3.accordion-header.font18 Q 未経験でも働けるお仕事はありますか
+              .accordion-content.font16 
+                p.accordion-text 未経験から始められる、事務職のお仕事、是非ご紹介したいオフィスワークのお仕事が多数ございます。また、当社での直接採用のお仕事もございますので、就業時間など働き方を比較的、自由に選択する環境も用意されています。
+            .accordion-item
+              h3.accordion-header.font18 Q 未経験でも働けるお仕事はありますか
+              .accordion-content.font16 
+                p.accordion-text 未経験から始められる、事務職のお仕事、是非ご紹介したいオフィスワークのお仕事が多数ございます。また、当社での直接採用のお仕事もございますので、就業時間など働き方を比較的、自由に選択する環境も用意されています。
       section.contact
+        .contact__contents
+          .sec-top
+            h2.sec-ttl.dark-blue Contact
+            p.sec-sub かんたん60秒！今すぐ無料で登録する
+          form(method="post" action="confirm.php") 
+            .contact__name
+              label(for="name") ご担当者名
+              input(type="text" placeholder="総合 莉愛" name="name")
+            .contact__furigana
+              label(for="name") ふりがな
+              input(type="text" placeholder="そうごう りあ" name="furigana")
+            .contact__email
+              label(for="name") メールアドレス
+              input(type="text" placeholder="info@abc.com" name="email")
+            .contact__phone
+              label(for="name") 電話番号
+              input(type="text" placeholder="09012345678" name="phone")
+            .contact__terms
+              h1 合同会社occur（以下,「当社」といいます。）は,本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における,ユーザーの個人情報の取扱いについて,以下のとおりプライバシーポリシー（以下,「本ポリシー」といいます。）を定めます。
+              br
+              .contact__terms__textArea
+                p 第1条（個人情報）
+                p 「個人情報」とは,個人情報保護法にいう「個人情報」を指すものとし,生存する個人に関する情報であって,当該情報に含まれる氏名,生年月日,住所,電話番号,連絡先その他の記述等により特定の個人を識別できる情報及び容貌,指紋,声紋にかかるデータ,及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
+                br
+            .contact__consent
+              p.contact__consent__text 個人情報の取り扱いについて、プライバシーポリシー事項に同意して送信
+              .contact__consent__btn
+                input(type="submit" value="送信する")
+                .contact__consent__btn-bg 
+
     //- include ./include/_footer
     include ./include/_script
