@@ -15,7 +15,58 @@ main {
     &-sub {
         font-size: 28px;
         font-weight: bold;
+        
+        @include sp {
+            font-size: 18px;
+        }
     }
+}
+
+.dark-blue {
+    color: #{$dark-blue};
+}
+
+.pink {
+    color: #{$pink};
+}
+
+.aln-center {
+    text-align: center;
+}
+
+.aln-left {
+    text-align: left;
+}
+
+.font20 {
+    font-size: 20px;
+    font-family: "Noto-sansJP", sans-serif;
+    @include sp {
+        font-size: 14px;
+    }
+}
+
+.font18 {
+    font-size: 18px;
+    font-family: "Noto-sansJP", sans-serif;
+    @include sp {
+        font-size: 14px;
+    }
+}
+
+.font16 {
+    font-size: 16px;
+    font-family: "Noto-sansJP", sans-serif;
+}
+
+.font14 {
+    font-size: 14px;
+    font-family: "Noto-sansJP", sans-serif;
+}
+
+.font12 {
+    font-size: 12px;
+    font-family: "Noto-sansJP", sans-serif;
 }
 
 .FV {
@@ -57,6 +108,7 @@ main {
         transform: translateY(-50%);
     }
     &__contents {
+        margin: 0 0 30px;
         & img {
             width: 100%;
         }
@@ -85,11 +137,11 @@ main {
         }
         &__contents {
             width: 90%;
-            margin: auto;
+            margin: 20px auto;
             & img {
                 width: 100%;
             }
-            &-item {
+            &__item {
                 width: 300px;
                 margin: auto;
             }
@@ -99,7 +151,7 @@ main {
 
 .about {
     padding: 100px 0;
-    &__content {
+    &__contents {
         width: 80%;
         margin: 30px auto;
         display: flex;
@@ -122,9 +174,7 @@ main {
         &-caption {
             width: 50%;
             margin-left: 20px;
-            font-size: 16px;
             font-weight: bold;
-            font-family: "Noto-sansJP", sans-serif;
             @include sp {
                 text-align: center;
                 font-size: 13px;
@@ -139,8 +189,6 @@ main {
     &__text {
         width: 60%;
         padding: 30px 0;
-        font-size: 16px;
-        font-family: "Noto-sansJP", sans-serif;
         text-align: center;
         margin: auto;
         background-color: #F0F7FF;
@@ -151,4 +199,270 @@ main {
             text-align: left;
         }
     }
+}
+
+.worries {
+    padding: 50px 0;
+    background: #FAEEF4;
+    &__contents {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        &__item {
+            border-radius: 10px;
+            margin: 0 15px;
+            padding: 20px 15px;
+            background-color: #{$white};
+            & img {
+                width: 80%;
+                margin: auto;
+            }
+            @include sp {
+                margin: 15px 0;
+            }
+        }
+        &-text {
+            font-weight: bold;
+            margin: 20px 0 0;
+        }
+        @include sp {
+            width: 90%;
+            margin: 20px auto;
+            flex-direction: column;
+        }
+    }
+}
+
+.solution {
+    padding: 50px 0;
+    background: #{$bg-light-blue};
+    &__contents {
+        width: 80%;
+        margin: 30px auto;
+        display: flex;
+        text-align: center;
+        &__item {
+            background-color: #{$white};
+            width: calc(100%/3);
+            padding: 20px 15px;
+            margin: 0 10px;
+            border-radius: 10px;
+            & img {
+                width: 75%;
+                margin: 15px auto;
+            }
+            @include sp {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        &-num {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        &-ttl {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        &-subttl {
+            width: fit-content;
+            margin: 15px 0 5px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: bold;
+            color: #{$dark-blue};
+            border-bottom: solid 2px #{$dark-blue};
+        }
+        &-labels {
+            margin: 20px 0;
+            & span {
+                margin: 5px;
+                padding: 5px 10px;
+                font-size: 14px;
+                font-weight: bold;
+                background-color: #{$dark-blue};
+                color: #{$white};
+                border-radius: 5px;
+            }
+        }
+        &-label {
+            margin: 10px 0;
+        }
+        @include sp {
+            width: 90%;
+            margin: 20px auto;
+            flex-direction: column;
+        }
+    }
+}
+
+.reason {
+    padding: 50px 0;
+    background-color: #{$light-grey};
+    &__contents {
+        width: 80%;
+        margin: 30px auto;
+        display: flex;
+        text-align: center;
+        &__item {
+            background-color: #{$white};
+            width: calc(100%/3);
+            padding: 20px 15px;
+            margin: 0 10px;
+            border-radius: 10px;
+            &-caption {
+                position: relative;
+                width: fit-content;
+                font-weight: bold;
+                padding: 5px 10px;
+                margin: auto;
+                color: #{$white};
+                background-color: #{$dark-grey};
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    margin-left: -15px;
+                    border: 8px solid transparent;
+                    border-top: 8px solid #{$dark-grey};
+                }
+            }
+            &-ttl {
+                font-size: 24px;
+                font-weight: bold;
+                color: #{$dark-blue};
+                margin: 10px 0;
+            }
+            & img {
+                width: 50%;
+                margin: 20px auto;
+            }
+            @include sp {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+        @include sp {
+            width: 90%;
+            margin: 20px auto;
+            flex-direction: column;
+        }
+    }
+}
+
+.voice {
+    padding: 50px 0;
+    &__contents {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        &__item {
+            width: calc(100%/3);
+            margin: 0 10px;
+            &__wrapper {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                & img {
+                    width: 20%;
+                }
+            }
+            &-ttl {
+                font-weight: bold;
+                color: #{$dark-blue};
+            }
+            &-text {
+                position: relative;
+                width: fit-content;
+                font-weight: bold;
+                padding: 20px;
+                margin: 30px auto;
+                color: #{$black};
+                background-color: #{$bg-light-blue};
+                border-radius: 5px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    left: 13%;
+                    border: 15px solid transparent;
+                    border-bottom: 20px solid #{$bg-light-blue};
+                    @include sp {
+                        left: 10%;
+                    }
+                }
+            }
+            @include sp {
+                width: 100%;
+                margin: 15px auto;
+            }
+        }
+        @include sp {
+            width: 90%;
+            margin: 30px auto;
+            flex-direction: column;
+        }
+    }
+}
+
+.faq {
+    padding: 50px 0;
+    background-color: #{$bg-light-blue};
+    &__contents {
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+
+.accordion-item {
+    position: relative;
+    margin: 20px 0;
+    &::after {
+        height: 20px;
+        position: absolute;
+        content: '';
+        border: solid 6px #000;
+        border-color: #{$white} transparent transparent;
+        display: inline-block;
+        right: 2%;
+        top: 50%;
+        transition: transform 0.3s ease;
+        @include sp {
+            right: 4%;
+        }
+    }
+    &.active::after {
+        top: 10%;
+        -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        transition: transform 0.3s ease;
+        @include sp {
+            top: 3%;
+        }
+    }
+}
+
+.accordion-header {
+    color: #{$white};
+    font-weight: bold;
+    background-color: #{$dark-blue};
+    padding: 15px 10px;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #{$white};
+}
+
+.accordion-text {
+    padding: 15px;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 100%; /* 修正: 適切な高さに調整せず、100%に設定する */
 }
