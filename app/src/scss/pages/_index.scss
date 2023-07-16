@@ -20,6 +20,30 @@ main {
             font-size: 18px;
         }
     }
+    &-contact {
+        width: fit-content;
+        position: relative;
+        top: 0;
+        width: fit-content;
+        margin: 10px auto 20px;
+        font-weight: bold;
+        padding: 5px 10px;
+        color: #{$white};
+        background: #{$pink};
+        &::after {
+            content: "";
+            position: absolute;
+            top: 95%;
+            left: 50%;
+            margin-left: -15px;
+            border: 8px solid transparent;
+            border-top: 13px solid #{$pink};
+        }
+        @include sp {
+            width: 60%;
+            font-size: 10px;
+        }
+    }
 }
 
 .dark-blue {
@@ -607,5 +631,58 @@ main {
         .sec-top {
             background-color: #{$light-grey};
         }
+        &__form {
+            width: 70%;
+            margin: auto;
+            &-name,
+            &-furigana,
+            &-email,
+            &-phone,
+            &-address {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 0;
+                & input,
+                & select {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    border: solid 1px #{$grey};
+                    border-radius: 3px;
+                }
+            }
+            &-email {
+                & input {
+                    margin-bottom: 10px 0;
+                }
+            }
+            &-text {
+                & textarea {
+                    width: 100%;
+                    padding: 10px;
+                    height: 200px;
+                    border: solid 1px #{$grey};
+                }
+            }
+            &__label {
+                display: flex;
+                & label {
+                    font-weight: bold;
+                }
+                & span {
+                    color: red;
+                    margin: 0 8px;
+                }
+            }
+        }
     }
+    &__consent {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        &__text {
+            margin: 0 15px;
+        }
+    }
+    
 }

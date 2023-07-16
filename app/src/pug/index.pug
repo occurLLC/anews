@@ -34,7 +34,7 @@ html(lang="ja")
           .FV__contents
             img(src="/img/page/FV-2.png", alt="ポイント1 安定収入 月給制なので安心！ (雇用期間の定めもなし) ポイント2 業界最高水準の月給 時間外も全額支給 (試用期間も変更ありません) ポイント3 福利厚生とサポートも充実 70種類以上の学習コンテンツと研修付き (社会保険ももちろん完備)")
           .FV__contents.reg
-            a(href="/").reg-btn
+            a(href="#contact").reg-btn
               .reg-btn__text
                 p.reg-btn__text-sub 登録はWebでかんたん！来社不要！
                 p.reg-btn__text-main かんたん60秒！今すぐ無料で登録する
@@ -248,36 +248,56 @@ html(lang="ja")
               h3.accordion-header.font18 Q 未経験でも働けるお仕事はありますか
               .accordion-content.font16 
                 p.accordion-text 未経験から始められる、事務職のお仕事、是非ご紹介したいオフィスワークのお仕事が多数ございます。また、当社での直接採用のお仕事もございますので、就業時間など働き方を比較的、自由に選択する環境も用意されています。
-      section.contact
+      section.contact#contact
         .contact__contents
           .sec-top
             h2.sec-ttl.dark-blue Contact
+            p.sec-contact.font16 登録はWebでかんたん！来社不要！
             p.sec-sub かんたん60秒！今すぐ無料で登録する
-          form(method="post" action="confirm.php") 
-            .contact__name
-              label(for="name") ご担当者名
+          form(method="post" action="confirm.php").contact__contents__form
+            .contact__contents__form-name.font14
+              .contact__contents__form__label
+                label(for="name") お名前
+                span *
               input(type="text" placeholder="総合 莉愛" name="name")
-            .contact__furigana
-              label(for="name") ふりがな
+            .contact__contents__form-furigana.font14
+              .contact__contents__form__label
+                label(for="name") ふりがな
+                span *
               input(type="text" placeholder="そうごう りあ" name="furigana")
-            .contact__email
-              label(for="name") メールアドレス
+            .contact__contents__form-email.font14
+              .contact__contents__form__label
+                label(for="name") メールアドレス
+                span *
               input(type="text" placeholder="info@abc.com" name="email")
-            .contact__phone
-              label(for="name") 電話番号
+              input(type="text" placeholder="確認のため、2度入力してください。" name="email")
+            .contact__contents__form-phone.font14
+              .contact__contents__form__label
+                label(for="name") 電話番号
+                span *
               input(type="text" placeholder="09012345678" name="phone")
-            .contact__terms
-              h1 合同会社occur（以下,「当社」といいます。）は,本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における,ユーザーの個人情報の取扱いについて,以下のとおりプライバシーポリシー（以下,「本ポリシー」といいます。）を定めます。
-              br
-              .contact__terms__textArea
-                p 第1条（個人情報）
-                p 「個人情報」とは,個人情報保護法にいう「個人情報」を指すものとし,生存する個人に関する情報であって,当該情報に含まれる氏名,生年月日,住所,電話番号,連絡先その他の記述等により特定の個人を識別できる情報及び容貌,指紋,声紋にかかるデータ,及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
-                br
+            .contact__contents__form-address.font14
+              .contact__contents__form__label
+                label(for="name") 住所
+              select(name="name")
+                option(value="都道府県を選択") 都道府県を選択
+                option(value="北海道") 北海道
+                option(value="北海道") 北海道
+                option(value="北海道") 北海道
+              input(type="text" placeholder="市区町村(例：千代田区神田神保町)" name="address")
+              input(type="text" placeholder="番地・ビル名(例：1-3-5)" name="address")
+            .contact__contents__form-text.font14
+              .contact__contents__form__label
+                label(for="name") お問い合わせ
+              textarea(name="text", cols="30", rows="10" placeholder="ご要望やご質問がございましたらこちらにご記載ください。") 
+            .contact__contents__form-terms
+              .contact-terms__textArea
+                p お客様よりお寄せ頂く個人情報は、お問合せ・ご要望へのご回答、情報提供に限り使用させていただきます。当社の「個人情報の取り扱いについて」をお読みのうえ、下記の「同意する」にチェックをつけたうえでご利用ください。
             .contact__consent
-              p.contact__consent__text 個人情報の取り扱いについて、プライバシーポリシー事項に同意して送信
-              .contact__consent__btn
-                input(type="submit" value="送信する")
-                .contact__consent__btn-bg 
+              input(type="checkbox" required)
+              p.contact__consent__text 個人情報の取り扱いに同意する
+            .reg-btn
+              input(type="submit" value="送信する").reg-btn__text.font18
 
     //- include ./include/_footer
     include ./include/_script

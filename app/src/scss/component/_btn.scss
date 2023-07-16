@@ -70,7 +70,10 @@
 	&-btn {
 		position: relative;
 		width: 100%;
+		color: #{$white};
 		&__text {
+			width: 100%;
+			font-weight: bold;
 			padding: 25px 0;
 			font-family: "Noto-sansJP", sans-serif;
 			text-align: center;
