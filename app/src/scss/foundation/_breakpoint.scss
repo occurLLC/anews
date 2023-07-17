@@ -1,8 +1,25 @@
 $BREAKPOINT_PC: 769px;
 $BREAKPOINT_SP: 768px;
 
+$BREAKPOINT_TB: 768px;
+$BREAKPOINT_TBmin: 590px;
+
+$BREAKPOINT_miniSP: 589px;
+
+@mixin minisp {
+  @media ( max-width: ($BREAKPOINT_miniSP) ) {
+    @content;
+  }
+}
+
 @mixin sp {
   @media ( max-width: ($BREAKPOINT_SP) ) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media ( max-width: ($BREAKPOINT_TB) )and(min-width:($BREAKPOINT_TBmin)) {
     @content;
   }
 }

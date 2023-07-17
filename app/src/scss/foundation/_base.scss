@@ -115,11 +115,25 @@ body {
 
 .pc-only {
 	@include sp {
-		display: none !important;
+		display: none;
 	}
 
 	@include pc {
 		display: block;
+	}
+}
+
+.tb-only {
+	@include sp {
+		display: none;
+	}
+
+	@include tb {
+		display: block;
+	}
+
+	@include pc {
+		display: none;
 	}
 }
 
@@ -130,6 +144,24 @@ body {
 
 	@include pc {
 		display: none !important;
+	}
+}
+
+.minisp-only {
+	@include sp {
+		display: none !important;
+	}
+
+	@include pc {
+		display: none !important;
+	}
+
+	@include tb {
+		display: none !important;
+	}
+
+	@include minisp {
+		display: block !important;
 	}
 }
 
