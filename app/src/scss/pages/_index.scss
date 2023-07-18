@@ -173,8 +173,7 @@ main {
         &__wrapper {
             width: 100%;
             position: absolute;
-            bottom: 20px;
-            z-index: 10;
+            bottom: 8%;
         }
         &__contents {
             width: 90%;
@@ -183,7 +182,7 @@ main {
                 width: 100%;
             }
             &__item {
-                width: 300px;
+                width: 100%;
                 margin: auto;
                 @include tb {
                     width: 70%;
@@ -238,7 +237,7 @@ main {
         }
     }
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 30px auto;
         display: flex;
         align-items: center;
@@ -273,8 +272,12 @@ main {
         }
     }
     &-caption {
+        width: 60%;
         text-align: center;
-        margin: 20px 0;
+        margin: 20px auto;
+        @include sp {
+            width: 90%;
+        }
     }
     &__text {
         width: 60%;
@@ -288,6 +291,9 @@ main {
             padding: 30px 10px;
             text-align: left;
         }
+    }
+    @include sp {
+        padding: 40px 0;
     }
 }
 
@@ -337,7 +343,7 @@ main {
         }
     }
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 50px auto;
         text-align: center;
         display: flex;
@@ -364,6 +370,9 @@ main {
             flex-direction: column;
         }
     }
+    @include sp {
+        padding: 40px 0;
+    }
 }
 
 .solution {
@@ -372,7 +381,7 @@ main {
     background: #{$bg-light-blue};
     z-index: 5;
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 30px auto;
         display: flex;
         text-align: center;
@@ -429,6 +438,9 @@ main {
             flex-direction: column;
         }
     }
+    @include sp {
+        padding: 40px 0;
+    }
 }
 
 .reason {
@@ -477,7 +489,7 @@ main {
         }
     }
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 30px auto;
         display: flex;
         text-align: center;
@@ -526,12 +538,15 @@ main {
             flex-direction: column;
         }
     }
+    @include sp {
+        padding: 40px 0;
+    }
 }
 
 .voice {
     padding: 50px 0;
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 50px auto;
         display: flex;
         &__item {
@@ -581,17 +596,23 @@ main {
             flex-direction: column;
         }
     }
+    @include sp {
+        padding: 40px 0;
+    }
 }
 
 .faq {
     padding: 50px 0;
     background-color: #{$bg-light-blue};
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 50px auto;
         @include sp {
             width: 90%;
         }
+    }
+    @include sp {
+        padding: 40px 0;
     }
 }
 
@@ -651,7 +672,7 @@ main {
     padding: 50px 0;
     background-color: #{$bg-dark-blue};
     &__contents {
-        width: 80%;
+        max-width: 1024px;
         margin: 50px auto;
         padding: 30px 0;
         border-radius: 10px;
@@ -660,7 +681,7 @@ main {
             background-color: #{$light-grey};
         }
         &__form {
-            width: 70%;
+            width: 600px;
             margin: auto;
             &-name,
             &-furigana,
@@ -670,12 +691,20 @@ main {
                 display: flex;
                 flex-direction: column;
                 margin: 10px 0;
-                & input,
+                & input {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    padding: 13px;
+                    border: solid 1px #{$white-grey};
+                    color: #{$grey};
+                    border-radius: 3px;
+                }
                 & select {
                     width: 100%;
                     margin-bottom: 15px;
-                    padding: 10px;
-                    border: solid 1px #{$grey};
+                    padding: 13px;
+                    border: solid 1px #{$white-grey};
+                    color: #{$black};
                     border-radius: 3px;
                 }
             }
@@ -686,13 +715,16 @@ main {
             }
             &-terms {
                 margin: 20px 0;
+                & a {
+                    border-bottom: solid 1px #{$black};
+                }
             }
             &-text {
                 & textarea {
                     width: 100%;
                     padding: 10px;
                     height: 200px;
-                    border: solid 1px #{$grey};
+                    border: solid 1px #{$white-grey};
                     @include sp {
                         height: 100px;
                     }
@@ -700,6 +732,7 @@ main {
             }
             &__label {
                 display: flex;
+                margin-bottom: 10px;
                 & label {
                     font-weight: bold;
                 }
@@ -719,9 +752,66 @@ main {
     &__consent {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 30px 0;
         &__text {
             margin: 0 15px;
+        }
+    }
+    @include sp {
+        padding: 40px 0;
+    }
+}
+
+.confirm {
+    height: auto;
+    padding: 50px 0;
+    background-color: #{$bg-dark-blue};
+    &__contents {
+        width: 1024px;
+        padding: 20px 0;
+        margin: auto;
+        border-radius: 10px;
+        background-color: #{$white};
+        text-align: center;
+        &-pink {
+            display: inline;
+            font-size: 16px;
+            color: #{$pink};
+            font-weight: 700;
+            border-bottom: solid 2px #{$pink};
+            margin: 20px 0;
+        }
+        &__wrapper {
+            width: 600px;
+            margin: auto;
+            &-box {
+                margin: 50px 0;
+            }
+            @include sp {
+                width: 90%;
+            }
+        }
+        &__textarea {
+            display: flex;
+            text-align: left;
+            margin: 30px 0;
+            &-ttl {
+                width: 30%;
+                font-weight: bold;
+                @include sp {
+                    width: 40%;
+                }
+            }
+            &-text {
+                width: 70%;
+                @include sp {
+                    width: 60%;
+                }
+            }
+        }
+        @include sp {
+            width: 90%;
         }
     }
 }

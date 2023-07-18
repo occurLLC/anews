@@ -1,0 +1,51 @@
+- var url          = '';
+- var local_url    = 'http://192.168.11.3:3000/';
+- var site_name    = '';
+- var og_locale    = 'jp_JP';
+- var og_type      = 'company';
+- var twitter_card = 'summary_large_image';
+- var twitter_site = '@';
+- var title        = '';
+- var description  = '';
+- var og_img       = 'img/ogp.png';
+- var favicon      = 'favicon.ico';
+- var path         = '.'
+
+doctype html
+html(lang="ja")
+    head
+        include ./include/_head
+
+    body
+        main
+            section.confirm 
+                .confirm__contents
+                    .sec-top
+                        h2.sec-ttl.dark-blue Contact
+                        p.sec-sub 確認画面
+                    p.confirm__contents-pink まだ無料登録は完了しておりません！<br>下のボタンをクリックして、完了させてください
+                    .confirm__contents__wrapper
+                        .confirm__contents__wrapper-box
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl お名前
+                                p.confirm__contents__textarea-text 総合 りあ
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl ふりがな
+                                p.confirm__contents__textarea-text そうごう りあ
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl 生年月日
+                                p.confirm__contents__textarea-text 2003/01/01
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl メールアドレス
+                                p.confirm__contents__textarea-text info@sougo.com
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl 電話番号
+                                p.confirm__contents__textarea-text 09012345678
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl 住所
+                                p.confirm__contents__textarea-text 東京都千代田区丸の内１丁目1-1
+                            .confirm__contents__textarea.font14
+                                p.confirm__contents__textarea-ttl お問い合わせ
+                                p.confirm__contents__textarea-text ここにテキストが入ります。
+                        .reg-btn
+                            input(type="submit" value="確定して送信する").reg-btn__text.font18
