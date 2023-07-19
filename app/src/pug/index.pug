@@ -264,7 +264,7 @@ html(lang="ja")
             p.sec-sub 
               | かんたん60秒！<br class="sp-only">
               | 今すぐ無料で登録する
-          form(method="post" action=".confirm.php").contact__contents__form
+          form(method="post" action="").contact__contents__form
             .contact__contents__form-name.font14
               .contact__contents__form__label
                 label(for="name") お名前
@@ -352,7 +352,7 @@ html(lang="ja")
             .contact__consent
               input(type="checkbox" required)
               p.contact__consent__text 個人情報の取り扱いに同意する
-            .reg-btn
+            a(href="./confirm.html").reg-btn
               input(type="submit" value="送信する").reg-btn__text.font18
 
     //- include ./include/_footer

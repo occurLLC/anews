@@ -1,0 +1,29 @@
+- var url          = '';
+- var local_url    = 'http://192.168.11.3:3000/';
+- var site_name    = '';
+- var og_locale    = 'jp_JP';
+- var og_type      = 'company';
+- var twitter_card = 'summary_large_image';
+- var twitter_site = '@';
+- var title        = '';
+- var description  = '';
+- var og_img       = 'img/ogp.png';
+- var favicon      = 'favicon.ico';
+- var path         = '.'
+
+doctype html
+html(lang="ja")
+    head
+        include ./include/_head
+
+    body
+        main
+            section.complete
+                .complete__contents
+                    .sec-top
+                        h2.sec-ttl.dark-blue Thank you
+                        p.sec-sub 送信完了
+                    p.complete__contents__text.font16 お申し込みいただきありがとうございます。
+                    .complete__contents__box
+                        a(href="./").reg-btn
+                            input(type="submit" value="ホームに戻る").reg-btn__text.font18
