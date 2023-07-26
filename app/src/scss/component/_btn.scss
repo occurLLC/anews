@@ -80,12 +80,20 @@
 			background: rgb(243,116,220);
 			background: linear-gradient(90deg, rgba(243,116,220,1) 0%, rgba(153,162,255,1) 50%, rgba(32,191,233,1) 100%);
 			border-radius: 8px;
+			& img {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				transform: translate(-50%,0);
+				width: 50%;
+				margin: auto;
+			}
 			&-sub {
 				position: absolute;
 				top: -20px;
 				left: 50%;
 				transform: translate(-50%,0);
-				width: fit-content;
+				width: 60%;
 				margin: 6px auto;
 				font-size: 12px;
 				font-weight: bold;
