@@ -35,9 +35,7 @@ html(lang="ja")
             img(src="./img/page/FV-2.png", alt="ポイント1 安定収入 月給制なので安心！ (雇用期間の定めもなし) ポイント2 業界最高水準の月給 時間外も全額支給 (試用期間も変更ありません) ポイント3 福利厚生とサポートも充実 70種類以上の学習コンテンツと研修付き (社会保険ももちろん完備)")
           .FV__contents.reg
             a(href="#contact").reg-btn
-              .reg-btn__text
-                img(src="./img/page/comment.png", alt="")
-                p.reg-btn__text-main かんたん60秒！今すぐ無料で登録する
+              img(src="./img/page/cta.png", alt="登録はLINEでかんたん！来社不要！ LINEで無料カウンセリングに申し込む")
       section.FV-sp.sp-only
         .FV-sp__catch.minisp-only
           img(src="./img/page/FV-sp1.png", alt="事務未経験の方が8割以上 正社員×事務職という選択肢")
@@ -45,11 +43,24 @@ html(lang="ja")
           img(src="./img/page/FV-SPbg.png", alt="安定した高収入で始めるオフィスワークなら「アニューズ」 ポイント1 安定収入 月給制なので安心！ (雇用期間の定めもなし) ポイント2 業界最高水準の月給 時間外も全額支給 (試用期間も変更ありません) ポイント3 福利厚生とサポートも充実 70種類以上の学習コンテンツと研修付き (社会保険ももちろん完備)")
         .FV-sp__bg-img.tb-only
           img(src="./img/page/FV-tbbg.png", alt="安定した高収入で始めるオフィスワークなら「アニューズ」")
-        .FV-sp__contents
-          a(href="#contact").reg-btn
-            .reg-btn__text
-              p.reg-btn__text-sub 登録はWebでかんたん！来社不要！
-              p.reg-btn__text-main かんたん60秒！今すぐ無料で登録する
+        .cta__line 
+            a(href="https://lin.ee/oLAzZx4" target="_blank") 
+              img(src="./img/page/cta.png", alt="登録はLINEでかんたん！来社不要！ LINEで無料カウンセリングに申し込む")
+      section.cta
+        .cta__wrapper
+          .sec-top
+            h2.sec-ttl.dark-blue CONTACT
+            p.sec-sub 簡単3ステップ登録！
+          .cta__contents
+            .cta__contents__item
+              img(src="./img/page/cta_01.png", alt="01 ボタンをタップ 画面下の予約ボタンをタップ")
+            .cta__contents__item
+              img(src="./img/page/cta_02.png", alt="02 認証許可＆友だち追加 認証許可して登録しよう")
+            .cta__contents__item
+              img(src="./img/page/cta_03.png", alt="03 画面に従って予約 案内に従ってバナーをタップ！")
+          .cta__line 
+            a(href="https://lin.ee/oLAzZx4" target="_blank") 
+              img(src="./img/page/cta.png", alt="登録はLINEでかんたん！来社不要！ LINEで無料カウンセリングに申し込む")
       section.about
         .about__bg-1.pc-only
           img(src="./img/page/bg-pink1.png", alt="")
@@ -248,104 +259,20 @@ html(lang="ja")
               h3.accordion-header.font18 Q 就業スタート日が１か月以上先ですが大丈夫ですか。​
               .accordion-content.font16 
                 p.accordion-text 現在、お仕事中の方でもご登録いただいている方は多数いらっしゃいます。ご希望の就業スタート日に合わせたお仕事紹介をさせていただきます。
-      section.contact#contact
-        .contact__contents
+      section.cta
+        .cta__wrapper
           .sec-top
-            h2.sec-ttl.dark-blue Contact
-            p.sec-contact.font16 登録はWebでかんたん！来社不要！
-            p.sec-sub 
-              | かんたん60秒！<br class="sp-only">
-              | 今すぐ無料で登録する
-          form(method="post" action="").contact__contents__form
-            .contact__contents__form-name.font14
-              .contact__contents__form__label
-                label(for="name") お名前
-                span *
-              input(type="text" placeholder="総合 莉愛" name="name")
-            .contact__contents__form-furigana.font14
-              .contact__contents__form__label
-                label(for="name") ふりがな
-                span *
-              input(type="text" placeholder="そうごう りあ" name="furigana")
-            .contact__contents__form-email.font14
-              .contact__contents__form__label
-                label(for="name") メールアドレス
-                span *
-              input(type="text" placeholder="info@abc.com" name="email")
-              input(type="text" placeholder="確認のため、2度入力してください。" name="email")
-            .contact__contents__form-phone.font14
-              .contact__contents__form__label
-                label(for="name") 電話番号
-                span *
-              input(type="text" placeholder="09012345678" name="phone")
-            .contact__contents__form-address.font14
-              .contact__contents__form__label
-                label(for="name") 住所
-              select(name="name")
-                option(value="都道府県を選択") 都道府県を選択
-                option(value="北海道") 北海道
-                option(value="青森県") 青森県
-                option(value="岩手県") 岩手県
-                option(value="宮城県") 宮城県
-                option(value="秋田県") 秋田県
-                option(value="山形県") 山形県
-                option(value="福島県") 福島県
-                option(value="茨城県") 茨城県
-                option(value="栃木県") 栃木県
-                option(value="群馬県") 群馬県
-                option(value="埼玉県") 埼玉県
-                option(value="千葉県") 千葉県
-                option(value="東京都") 東京都
-                option(value="神奈川県") 神奈川県
-                option(value="新潟県") 新潟県
-                option(value="富山県") 富山県
-                option(value="石川県") 石川県
-                option(value="福井県") 福井県
-                option(value="山梨県") 山梨県
-                option(value="長野県") 長野県
-                option(value="岐阜県") 岐阜県
-                option(value="静岡県") 静岡県
-                option(value="愛知県") 愛知県
-                option(value="三重県") 三重県
-                option(value="滋賀県") 滋賀県
-                option(value="京都府") 京都府
-                option(value="大阪府") 大阪府
-                option(value="兵庫県") 兵庫県
-                option(value="奈良県") 奈良県
-                option(value="和歌山県") 和歌山県
-                option(value="鳥取県") 鳥取県
-                option(value="岡山県") 岡山県
-                option(value="広島県") 広島県
-                option(value="山口県") 山口県
-                option(value="徳島県") 徳島県
-                option(value="香川県") 香川県
-                option(value="愛媛県") 愛媛県
-                option(value="高知県") 高知県
-                option(value="福岡県") 福岡県
-                option(value="佐賀県") 佐賀県
-                option(value="長崎県") 長崎県
-                option(value="熊本県") 熊本県
-                option(value="大分県") 大分県
-                option(value="宮崎県") 宮崎県
-                option(value="鹿児島県") 鹿児島県
-                option(value="沖縄県") 沖縄県
-              input(type="text" placeholder="市区町村(例：千代田区神田神保町)" name="address")
-              input(type="text" placeholder="番地・ビル名(例：1-3-5)" name="address")
-            .contact__contents__form-text.font14
-              .contact__contents__form__label
-                label(for="name") お問い合わせ
-              textarea(name="text", cols="30", rows="10" placeholder="ご要望やご質問がございましたらこちらにご記載ください。") 
-            .contact__contents__form-terms
-              .contact-terms__textArea
-                p
-                | お客様よりお寄せ頂く個人情報は、お問合せ・ご要望へのご回答、情報提供に限り使用させていただきます。<br>当社の「
-                a(href="https://sougo-career.co.jp/privacypolicy/") 個人情報の取り扱いについて
-                | 」をお読みのうえ、下記の「同意する」にチェックをつけたうえでご利用ください。
-            .contact__consent
-              input(type="checkbox" required)
-              p.contact__consent__text 個人情報の取り扱いに同意する
-            a(href="./confirm.html").reg-btn
-              input(type="submit" value="送信する").reg-btn__text.font18
-
+            h2.sec-ttl.dark-blue CONTACT
+            p.sec-sub 簡単3ステップ登録！
+          .cta__contents
+            .cta__contents__item
+              img(src="./img/page/cta_01.png", alt="01 ボタンをタップ 画面下の予約ボタンをタップ")
+            .cta__contents__item
+              img(src="./img/page/cta_02.png", alt="02 認証許可＆友だち追加 認証許可して登録しよう")
+            .cta__contents__item
+              img(src="./img/page/cta_03.png", alt="03 画面に従って予約 案内に従ってバナーをタップ！")
+          .cta__line 
+            a(href="https://lin.ee/oLAzZx4" target="_blank") 
+              img(src="./img/page/cta.png", alt="登録はLINEでかんたん！来社不要！ LINEで無料カウンセリングに申し込む")
     //- include ./include/_footer
     include ./include/_script

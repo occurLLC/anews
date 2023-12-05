@@ -197,6 +197,49 @@ main {
     }
 }
 
+.cta {
+    width: 100%;
+    background-color: $white;
+
+    &__wrapper {
+        padding: 50px 0;
+        background: rgb(237,119,223);
+        background: linear-gradient(90deg, rgba(237,119,223,0.2) 0%, rgba(153,162,255,0.2) 50%, rgba(40,189,234,0.2) 100%);
+    }
+
+    &__contents {
+        display: flex;
+        gap: 30px;
+        max-width: 1024px;
+        width: 90%;
+        margin: 20px auto;
+
+        @include sp {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__item {
+            & img {
+                margin: auto;
+            }
+        }
+    }
+
+    &__line {
+        width: 45%;
+        margin: 30px auto 0;
+
+        @include sp {
+            width: 90%;
+        }
+
+        & img {
+            width: 100%;
+        }
+    }
+}
+
 .about {
     position: relative;
     padding: 100px 0;
